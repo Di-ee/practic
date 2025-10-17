@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-test.css">
+    <title>Тест: История Дань Хэна</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Тест: История Дань Хэна</h1>
+        <div class="user-info">
+            <span class="user-name" id="userName"></span>
+            <button class="btn btn-secondary" id="logoutBtn">Выйти</button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="decorative decorative-1"></div>
+        <div class="decorative decorative-2"></div>
+        
+        <div class="question-counter" id="questionCounter">Вопрос 1 из 10</div>
+        
+        <form id="testForm">
+            <!-- Вопрос 1 -->
+            <div class="question active" id="question1">
+                <div class="question-text">1. Кем был Дань Хэн в своей прошлой жизни?</div>
+                <div class="question-image">
+                    <!-- Здесь можно добавить изображение для вопроса -->
+                    <!-- <img src="dan-heng-past.jpg" alt="Прошлая жизнь Дань Хэна"> -->
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q1" value="a">
+                        <span>Верховный старейшина</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="b">
+                        <span>Капитаном корабля Экспресс</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="c">
+                        <span>Работник КММ</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="d">
+                        <span>Обычным жителем Лофу</span>
+                    </label>
+                </div>
+                <div class="answer-required hidden" id="answerRequired1">Пожалуйста, выберите ответ, чтобы продолжить</div>
+            </div>
+            
+            <!-- Вопрос 2 -->
+            <div class="question" id="question2">
+                <div class="question-text">2. Какое преступление совершил Дань Хэн в прошлой жизни?</div>
+                <div class="question-image">
+                    <!-- Здесь можно добавить изображение для вопроса -->
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q2" value="a">
+                        <span>Украл священные артефакты Лофу</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q2" value="b">
+                        <span>Предал своего господина</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q2" value="c">
+                        <span>Воскресил друга с использованием запретной силы</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q2" value="d">
+                        <span>Уничтожил священный древо Лофу</span>
+                    </label>
+                </div>
+                <div class="answer-required hidden" id="answerRequired2">Пожалуйста, выберите ответ, чтобы продолжить</div>
+            </div>
+            
+            <!-- Вопрос 3 -->
+            <div class="question" id="question3">
+                <div class="question-text">3. Как звали друга, которого Дань Хэн попытался воскресить?</div>
+                <div class="question-image">
+                    <!-- Здесь можно добавить изображение для вопроса -->
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q3" value="a">
+                        <span>Бай Хэн</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q3" value="b">
+                        <span>Инсин</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q3" value="c">
+                        <span>Цзин Юань</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q3" value="d">
+                        <span>Люцифер</span>
+                    </label>
+                </div>
+                <div class="answer-required hidden" id="answerRequired3">Пожалуйста, выберите ответ, чтобы продолжить</div>
+            </div>
+            
+            <!-- Вопрос 4 -->
+            <div class="question" id="question4">
+                <div class="question-text">4. Кто такой Блэйд (Blade) по отношению к Дань Хэну?</div>
+                <div class="question-image">
+                    <!-- Здесь можно добавить изображение для вопроса -->
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q4" value="a">
+                        <span>Его нынешний наставник</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q4" value="b">
+                        <span>Бывший друг, ставший врагом</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q4" value="c">
+                        <span>Его брат</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q4" value="d">
+                        <span>Создатель корабля Экспресс</span>
+                    </label>
+                </div>
+                <div class="answer-required hidden" id="answerRequired4">Пожалуйста, выберите ответ, чтобы продолжить</div>
+            </div>
+            
+            <!-- Вопрос 5 -->
+            <div class="question" id="question5">
+                <div class="question-text">5. Где Дань Хэн нашел свое место после изгнания с Лофу Сяньчжоу?</div>
+                <div class="question-image">
+                    <!-- Здесь можно добавить изображение для вопроса -->
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q5" value="a">
+                        <span>Звездный экспресс</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q5" value="b">
+                        <span>Ковчег Спасения</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q5" value="c">
+                        <span>Летучий Голландец</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q5" value="d">
+                        <span>Серебряный Сокол</span>
+                    </label>
+                </div>
+                <div class="answer-required hidden" id="answerRequired5">Пожалуйста, выберите ответ, чтобы продолжить</div>
+            </div>
+            
+            <!-- Вопрос 6 -->
+            <div class="question" id="question6">
+                <div class="question-text">6. Какую роль выполняет Дань Хэн на корабле?</div>
+                <div class="question-image">
+                    <!-- Здесь можно добавить изображение для вопроса -->
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q6" value="a">
+                        <span>Архивариус</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q6" value="b">
+                        <span>Капитан</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q6" value="c">
+                        <span>Штурман</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q6" value="d">
+                        <span>Инженер</span>
+                    </label>
+                </div>
+                <div class="answer-required hidden" id="answerRequired6">Пожалуйста, выберите ответ, чтобы продолжить</div>
+            </div>
+            
+            <!-- Вопрос 7 -->
+            <div class="question" id="question7">
+                <div class="question-text">7. Как называется истинная форма Дань Хэна?</div>
+                <div class="question-image">
+                    <!-- Здесь можно добавить изображение для вопроса -->
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q7" value="a">
+                        <span>Пожиратель Луны</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q7" value="b">
+                        <span>Небесный Воин</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q7" value="c">
+                        <span>Теневой Призрак</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q7" value="d">
+                        <span>Лунный Странник</span>
+                    </label>
+                </div>
+                <div class="answer-required hidden" id="answerRequired7">Пожалуйста, выберите ответ, чтобы продолжить</div>
+            </div>
+            
+            <!-- Вопрос 8 -->
+            <div class="question" id="question8">
+                <div class="question-text">8. Какой элемент и путь у Дань Хэна в игре?</div>
+                <div class="question-image">
+                    <!-- Здесь можно добавить изображение для вопроса -->
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q8" value="a">
+                        <span>Воображаемый, Изобилие</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q8" value="b">
+                        <span>Ветер, Разрушение</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q8" value="c">
+                        <span>Лед, Охотник</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q8" value="d">
+                        <span>Квантовый, Нихилизм</span>
+                    </label>
+                </div>
+                <div class="answer-required hidden" id="answerRequired8">Пожалуйста, выберите ответ, чтобы продолжить</div>
+            </div>
+            
+            <!-- Вопрос 9 -->
+            <div class="question" id="question9">
+                <div class="question-text">9. Что сдерживает истинную силу Дань Хэна?</div>
+                <div class="question-image">
+                    <!-- Здесь можно добавить изображение для вопроса -->
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q9" value="a">
+                        <span>Особый кодон (устройство)</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q9" value="b">
+                        <span>Печать на его руке</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q9" value="c">
+                        <span>Особый амулет</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q9" value="d">
+                        <span>Кольцо на шее</span>
+                    </label>
+                </div>
+                <div class="answer-required hidden" id="answerRequired9">Пожалуйста, выберите ответ, чтобы продолжить</div>
+            </div>
+            
+            <!-- Вопрос 10 -->
+            <div class="question" id="question10">
+                <div class="question-text">10. Как звали Дань Хэна в прошлой жизни?</div>
+                <div class="question-image">
+                    <!-- Здесь можно добавить изображение для вопроса -->
+                </div>
+                <input type="text" class="free-input" name="q10" placeholder="Введите ваш ответ" id="q10-input">
+                <div class="answer-required hidden" id="answerRequired10">Пожалуйста, введите ответ, чтобы продолжить</div>
+            </div>
+            
+            <div class="actions">
+                <div class="navigation">
+                    <button type="button" class="btn btn-secondary" id="prevBtn" disabled>Предыдущий вопрос</button>
+                    <button type="button" class="btn" id="nextBtn">Следующий вопрос</button>
+                </div>
+                <button type="submit" class="btn" id="submitBtn" style="display: none;">Завершить тест</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="../script/script_test.js"> </script>
+</body>
+</html>
